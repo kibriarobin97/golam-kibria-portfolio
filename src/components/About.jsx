@@ -1,4 +1,4 @@
-import aboutPic from "../assets/portfolio.jpg"
+import aboutPic from "../assets/icon-img.jpg"
 
 const About = () => {
     return (
