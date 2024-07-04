@@ -24,7 +24,7 @@ const About = () => {
                         <br />
 
                         Outside of work, I am an avid reader and tech enthusiast, always on the lookout for the next big thing in the industry. I believe in the power of collaboration and am always open to new ideas and perspectives.</p>
-                    <a href="/public/Golam Kibria Resume.pdf" download="Resume" className="btn btn-secondary">Download Resume</a>
+                    <a href="/Golam Kibria Resume.pdf" download="Golam Kibria Resume.pdf" className="btn btn-secondary">Download Resume</a>
                 </div>
             </div>
         </div>
