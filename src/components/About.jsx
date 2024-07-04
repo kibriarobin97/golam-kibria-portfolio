@@ -3,7 +3,7 @@ import aboutPic from "../assets/icon-img.jpg"
 const About = () => {
     return (
         <div className="max-w-7xl mx-auto gap-10 my-20 p-5">
-            <h3 className="text-3xl font-bold text-center mb-10">About Me</h3>
+            <h3 id="about" className="text-3xl font-bold text-center mb-10">About Me</h3>
             <div className="lg:flex justify-center items-center lg:gap-10">
                 <div className="lg:w-1/3 w-2/3 mx-auto border-8 rounded-full mt-5">
                     <img src={aboutPic} alt="" className="rounded-full w-full h-[290px] lg:h-[400px] object-cover" />

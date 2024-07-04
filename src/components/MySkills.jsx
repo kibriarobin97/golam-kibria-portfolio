@@ -7,7 +7,7 @@ import { IoLogoJavascript } from "react-icons/io";
 const MySkills = () => {
     return (
         <div className="my-20 max-w-7xl mx-auto">
-            <h3 className="text-3xl font-bold text-center mb-10">Technical Skills</h3>
+            <h3 id="skills" className="text-3xl font-bold text-center mb-10">Technical Skills</h3>
             <div className="flex flex-wrap justify-center items-center gap-10">
                 <div className="border-2 p-2 border-neutral-400 rounded-md">
                     <FaHtml5 className="text-4xl" />

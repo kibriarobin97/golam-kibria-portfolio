@@ -25,7 +25,7 @@ const Contact = () => {
 
     return (
         <div className="my-20 max-w-7xl mx-auto">
-            <h3 className="text-3xl font-bold text-center mb-10">Contact</h3>
+            <h3 id='contact' className="text-3xl font-bold text-center mb-10">Contact</h3>
             <section className="py-6">
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                     <div className="py-6 md:py-0 md:px-6">

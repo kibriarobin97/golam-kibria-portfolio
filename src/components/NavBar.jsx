@@ -4,10 +4,10 @@ const NavBar = () => {
 
     const navLinks = <>
         <li><Link to='/'>Home</Link></li>
-        {/* <li><Link>About Me</Link></li>
-        <li><Link>Skills</Link></li>
-        <li><Link>Projects</Link></li> */}
-        <li><Link to='/contact'>Contact</Link></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </>
     return (
         <div className="navbar fixed z-10">
@@ -33,7 +33,7 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Portfolio</a>
+                <Link to='/'><a className="btn btn-ghost text-xl">Golam Kibria</a></Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

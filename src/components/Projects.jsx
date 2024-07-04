@@ -7,7 +7,7 @@ const Projects = () => {
 
     return (
         <div className="my-20 max-w-7xl mx-auto">
-            <h3 className="text-3xl font-bold text-center mb-10">Projects</h3>
+            <h3 id="projects" className="text-3xl font-bold text-center mb-10">Projects</h3>
             <div className="space-y-10">
                 <div
                     className="md:flex justify-center items-center gap-5 max-w-5xl mx-auto p-6 rounded-md shadow-md space-y-3">
