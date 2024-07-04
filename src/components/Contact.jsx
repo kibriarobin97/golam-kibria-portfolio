@@ -1,5 +1,28 @@
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_27t8c0p', 'template_eh53o5w', form.current, {
+                publicKey: 'XgPFNKtWp11C6E0YA',
+            })
+            .then(
+                () => {
+                    toast.success('Email send successfully!')
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
     return (
         <div className="my-20 max-w-7xl mx-auto">
             <h3 className="text-3xl font-bold text-center mb-10">Contact</h3>
@@ -24,20 +47,20 @@ const Contact = () => {
                             </p>
                         </div>
                     </div>
-                    <form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+                    <form ref={form} onSubmit={sendEmail} className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
                         <label className="block">
                             <span className="mb-1 font-semibold">Name</span>
-                            <input type="text" placeholder="Enter your name" className="block w-full rounded-md p-2 shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800" />
+                            <input type="text" placeholder="Enter your name" name='user_name' className="block w-full rounded-md p-2 shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800" />
                         </label>
                         <label className="block">
                             <span className="mb-1 font-semibold">Email</span>
-                            <input type="email" placeholder="Enter your email" className="block w-full rounded-md p-2 shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800" />
+                            <input type="email" placeholder="Enter your email" name='user_email' className="block w-full rounded-md p-2 shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800" />
                         </label>
                         <label className="block">
                             <span className="mb-1 font-semibold">Message</span>
-                            <textarea rows="3" className="block w-full p-2 rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"></textarea>
+                            <textarea rows="3" name='message' className="block w-full p-2 rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"></textarea>
                         </label>
-                        <button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-violet-400 text-gray-900 focus:ring-violet-400 hover:ring-violet-400">Send Email</button>
+                        <input type="submit" value="Send Email" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-violet-400 text-gray-900 focus:ring-violet-400 hover:ring-violet-400 cursor-pointer"/>
                     </form>
                 </div>
             </section>
