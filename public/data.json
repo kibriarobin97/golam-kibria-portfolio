@@ -1,27 +1,35 @@
 [
-    {
-        "_id": 1,
-      "name": "Study Hive (Educational Platform)",
-      "description": "Study Hive is an innovative educational platform designed to facilitate online learning. It offers a variety of courses, interactive tutorials, and collaborative tools to enhance the learning experience for students and educators alike.",
-      "Live": "https://study-hive-388ef.web.app",
-      "photo": "https://i.ibb.co/KD379fV/kelly-sikkema-Yn-RNd-B-XTME-unsplash.jpg",
-      "technology": "Tailwind, React.js, Node.js, Express.js, MongoDB, Stripe, Firebase"
-    },
-    {
-        "_id": 2,
-      "name": "Legal Vantage (Lawyer Service)",
-      "description": "Legal Vantage is a comprehensive lawyer service platform that connects clients with experienced legal professionals. It provides a seamless experience for finding, consulting, and hiring lawyers for various legal needs.",
-      "Live": "https://legal-vantage.web.app",
-      "photo": "https://i.ibb.co/nnvvRdL/tingey-injury-law-firm-DZpc4-UY8-Zt-Y-unsplash.jpg",
-      "technology": "Tailwind, React.js, Node.js, Express.js, MongoDB, Firebase"
-    },
-    {
-        "_id": 3,
-      "name": "Adventure Aegis (Tourist Service)",
-      "description": "Adventure Aegis is a premier tourist service platform offering personalized travel experiences. It provides curated travel itineraries, expert guides, and booking services to ensure a memorable and hassle-free adventure for every traveler.",
-      "Live": "https://adventure-aegis.web.app",
-      "photo": "https://i.ibb.co/thhvHHv/gabriella-clare-marino-oc-KTWPb-Vc2-U-unsplash.jpg",
-      "technology": "Tailwind, React.js, Node.js, Express.js, MongoDB, Firebase"
-    }
-  ]
-  
+  {
+    "_id": 1,
+    "name": "Study Hive (Educational Platform)",
+    "description": "Study Hive is an innovative educational platform designed to facilitate online learning. It offers a variety of courses, interactive tutorials, and collaborative tools to enhance the learning experience for students and educators alike.",
+    "Live": "https://study-hive-388ef.web.app",
+    "clientLink": "https://github.com/kibriarobin97/study-hive-client",
+    "photo": "https://i.ibb.co/KD379fV/kelly-sikkema-Yn-RNd-B-XTME-unsplash.jpg",
+    "technology": "Tailwind, React.js, Node.js, Express.js, MongoDB, Stripe, Firebase",
+    "challenges": "Integrating the Stripe payment method to build a secure course purchase flow was a key challenge, especially ensuring users were correctly enrolled after a successful payment. Managing data access control for multiple user roles (student/teacher/admin) was also fairly complex.",
+    "futurePlans": "Planning to add video-based lecture streaming and an analytics dashboard for instructors. Also want to add a real-time chat/discussion feature to make student-instructor communication easier."
+  },
+  {
+    "_id": 2,
+    "name": "Legal Vantage (Lawyer Service)",
+    "description": "Legal Vantage is a comprehensive lawyer consultation platform that connects clients with experienced legal professionals. It features a responsive navbar, an attractive slider, and detailed information on various legal services with proactive legal guidance. With secure Firebase Authentication, users can add their own services and view, update, or delete their listed services. The site is fully responsive across mobile and tablet devices for accessibility anywhere.",
+    "Live": "https://legal-vantage.web.app",
+    "clientLink": "https://github.com/kibriarobin97/legal-vantage-client",
+    "photo": "https://i.ibb.co/nnvvRdL/tingey-injury-law-firm-DZpc4-UY8-Zt-Y-unsplash.jpg",
+    "technology": "Tailwind, React.js, Node.js, Express.js, MongoDB, Firebase",
+    "challenges": "Building a secure login/registration system with Firebase Authentication and handling protected routes was a key challenge. Integrating the Swiper slider and AOS animations correctly for a smooth, responsive experience was also time-consuming. Implementing user-specific CRUD logic — ensuring each user could only view, edit, and delete their own added services required careful handling as well.",
+    "futurePlans": "Planning to add a review/rating system for lawyers, an online consultation booking system with calendar integration, and real-time messaging between clients and lawyers. Also want to add advanced search and filtering by service category, and integrate a payment gateway for paid consultations in the future."
+  },
+  {
+    "_id": 3,
+    "name": "Adventure Aegis (Tourist Service)",
+    "description": "Adventure Aegis is a premier tourist service platform offering personalized travel experiences across Southeast Asia. It features a responsive navbar, an attractive slider, and detailed information on curated destinations. With secure Firebase Authentication, users can add their favorite places and view, update, or delete their added list — ensuring a smooth, hassle-free experience for every traveler. The site is fully responsive across mobile and tablet devices.",
+    "Live": "https://adventure-aegis.web.app",
+    "clientLink": "https://github.com/kibriarobin97/adventure-aegis-client",
+    "photo": "https://i.ibb.co/thhvHHv/gabriella-clare-marino-oc-KTWPb-Vc2-U-unsplash.jpg",
+    "technology": "Tailwind, React.js, Node.js, Express.js, MongoDB, Firebase",
+    "challenges": "Building a secure login system with Firebase Authentication and protected routes — so only logged-in users could add, update, or delete a place — was a key challenge. Implementing user-specific CRUD logic, ensuring each user could only view and manage their own added places, was also important to get right.",
+    "futurePlans": "Planning to add a review/rating system, online booking with payment integration, and advanced search/filtering by place category. Also want to add a feature allowing users to build their own custom travel itinerary in the future."
+  }
+]

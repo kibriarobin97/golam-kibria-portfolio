@@ -2,7 +2,7 @@
 const Education = () => {
     return (
         <div className="my-20 max-w-7xl mx-auto">
-            <h3 className="text-3xl font-bold text-center mb-10">Education</h3>
+            <h3 className="text-3xl lg:text-4xl text-white font-bold text-center mb-10">Education</h3>
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}

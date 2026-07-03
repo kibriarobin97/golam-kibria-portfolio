@@ -8,6 +8,7 @@ import {
 import Root from './Root/Root';
 import Home from './pages/Home';
 import { Toaster } from 'react-hot-toast';
+import ProjectDetails from './pages/ProjectDetails';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
+        loader: () => fetch('/data.json')
+      },
+      {
+        path: '/project/:id',
+        element: <ProjectDetails></ProjectDetails>,
         loader: () => fetch('/data.json')
       }
     ]

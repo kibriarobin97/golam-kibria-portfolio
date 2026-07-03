@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 
     const navLinks = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><Link to='/#home'>Home</Link></li>
+        <li><Link to='/#about'>About Me</Link></li>
+        <li><Link to='/#skills'>Skills</Link></li>
+        <li><Link to='/#projects'>Projects</Link></li>
+        <li><Link to='/#contact'>Contact</Link></li>
     </>
     return (
         <div className="navbar fixed z-10">
@@ -33,7 +33,7 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <Link to='/'><a className="btn btn-ghost text-xl">Golam Kibria</a></Link>
+                <Link to='/#home'><a className="btn btn-ghost font-bold text-xl">Golam Kibria</a></Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

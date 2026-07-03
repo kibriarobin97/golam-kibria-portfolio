@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import toast from 'react-hot-toast';
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
 
@@ -25,11 +26,11 @@ const Contact = () => {
 
     return (
         <div className="my-20 max-w-7xl mx-auto">
-            <h3 id='contact' className="text-3xl font-bold text-center mb-10">Contact</h3>
+            <h3 id='contact' className="text-3xl lg:text-4xl font-bold text-center text-white mb-10">Contact</h3>
             <section className="py-6">
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                     <div className="py-6 md:py-0 md:px-6">
-                        <h1 className="text-4xl font-bold">Let's talk!</h1>
+                        <h1 className="text-3xl font-bold">Let's talk!</h1>
                         <p className="pt-2 pb-4">Fill in the form to Send Email</p>
                         <div className="space-y-4">
                             <p className="flex items-center">
@@ -45,6 +46,15 @@ const Contact = () => {
                                 </svg>
                                 <span>kibriarobin97@gmail.com</span>
                             </p>
+                            <a
+                                href="https://wa.me/8801871793020"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="flex items-center w-fit gap-2 mr-2 sm:mr-6 px-4 py-2 rounded-md bg-green-500 text-gray-900 font-semibold hover:bg-green-600 transition-colors"
+                            >
+                                <FaWhatsapp className="w-5 h-5" />
+                                <span>Chat on WhatsApp</span>
+                            </a>
                         </div>
                     </div>
                     <form ref={form} onSubmit={sendEmail} className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
@@ -60,7 +70,11 @@ const Contact = () => {
                             <span className="mb-1 font-semibold">Message</span>
                             <textarea rows="3" name='message' className="block w-full p-2 rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-800"></textarea>
                         </label>
-                        <input type="submit" value="Send Email" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-violet-400 text-gray-900 focus:ring-violet-400 hover:ring-violet-400 cursor-pointer"/>
+                        <input
+                            type="submit"
+                            value="Send Email"
+                            className="btn btn-secondary self-center px-8 text-lg"
+                        />
                     </form>
                 </div>
             </section>
