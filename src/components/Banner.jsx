@@ -16,7 +16,7 @@ const Banner = () => {
             <h1 className="mb-3 text-2xl lg:text-3xl font-bold">
               I am{" "}
               <span className="text-orange-400 text-4xl">
-                Golam Kibria Robin
+                Golam Kibria
               </span>
             </h1>
             <h2 className="mb-3 text-xl lg:text-2xl font-semibold">
@@ -39,7 +39,7 @@ const Banner = () => {
               </a>
               <a
                 rel="noopener noreferrer"
-                href="https://github.com/kibriarobin97"
+                href="https://github.com/kibriarobin"
                 title="GitHub"
                 target="blank"
                 className="flex items-center btn btn-secondary"

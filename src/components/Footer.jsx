@@ -30,7 +30,7 @@ const Footer = () => {
                         <a rel="noopener noreferrer" href="https://www.linkedin.com/in/golam-kibria97" title="Linkedin" target="blank" className="flex items-center p-1">
                         <FaLinkedin className="text-white text-xl"/>
                         </a>
-                        <a rel="noopener noreferrer" href="https://github.com/kibriarobin97" title="GitHub" target="blank" className="flex items-center p-1">
+                        <a rel="noopener noreferrer" href="https://github.com/kibriarobin" title="GitHub" target="blank" className="flex items-center p-1">
                         <FaGithubSquare className="text-white text-xl"/>
                         </a>
                     </div>
